@@ -67,11 +67,3 @@ class RobotTrajectory(object):
         except KeyboardInterrupt:
             self.client.cancel_goal()
             raise
-    
-if __name__ == "__main__":
-
-    # Create the UR5 controller
-    controller = UR5TrajectoryPlanner()
-    # Wait until callback
-    rospy.spin()
-
