@@ -12,7 +12,7 @@ class UR5TrajectoryPlanner(RobotTrajectory):
     def __init__(self):
 
         joint_names = ['shoulder_pan_joint', 'shoulder_lift_joint', 'elbow_joint', 'wrist_1_joint', 'wrist_2_joint', 'wrist_3_joint']
-        super(UR5TrajectoryPlanner, self).__init__(joint_anmes,
+        super(UR5TrajectoryPlanner, self).__init__(joint_names,
                                                    'robot_ur5',
                                                    'ur5_trajectory_goal')
 
